@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .header {
+    background-color: #f1f1f1;
+    grid-column: 1 / 13;
+    text-align: center;
+    font-size: 35px;
+    padding: 10px;
+  }
+  
+  /* The grid container */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+    grid-column-gap: 10px;
+  } 
+  
+  .difficulty,
+  .questions,
+  .rules {
+    padding: 10px;
+    grid-row: 2 / 5;
+  }
+  
+  /* Difficulty on left */
+  .difficulty {
+    grid-column: 1 / 4;
+  }
+  
+  /* Questions in middle */
+  .questions {
+    grid-column: 4 / 10;
+  }
+  
+  /* Rules on right */
+  .rules {
+    grid-column: 10 / 13;
+  }
+  
+  .footer {
+    grid-column: 1 / 13;
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  
