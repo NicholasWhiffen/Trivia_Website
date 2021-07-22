@@ -1,52 +1,77 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+  background-color: #f1f1f1;
+  grid-column: 1 / 13;
+  text-align: center;
+  font-size: 35px;
+  padding: 10px;
+}
+
+/* The grid container */
+#container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 0.5fr 1.5fr 1.5fr 1fr 0.5fr;
+    
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+} 
+
+#difficulty,
+#questions,
+#rules {
+  grid-row: 2 / 5;
+}
+
+/* Difficulty on left */
+#difficulty {
+  grid-column: 1 / 4;
+  background-color: blue;
+}
+
+/* Questions in middle */
+#questions {
+  grid-column: 4 / 10;
+  background-color: green;
+}
+
+/* Rules on right */
+#rules {
+  grid-column: 10 / 13;
+  background-color: red;
+}
+
+#footer {
+  grid-column: 1 / 13;
+  background-color: #f1f1f1;
+  text-align: center;
+  grid-row: 5;
+  grid-row-gap: 10px;
+  background-color: yellow;
+}
+@media screen and (max-width: 600px) {
+  #container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1.5fr 1fr 0.5fr;
+    
   }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .header {
-    background-color: #f1f1f1;
+  #difficulty {
     grid-column: 1 / 13;
-    text-align: center;
-    font-size: 35px;
-    padding: 10px;
+    grid-row: 2;
   }
-  
-  /* The grid container */
-  .container {
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    grid-template-rows: repeat(5, minmax(0, 1fr));
-    grid-column-gap: 10px;
-  } 
-  
-  .difficulty,
-  .questions,
-  .rules {
-    padding: 10px;
-    grid-row: 2 / 5;
+  #questions {
+    grid-column: 1 /13;
+    grid-row: 3;
   }
-  
-  /* Difficulty on left */
-  .difficulty {
-    grid-column: 1 / 4;
-  }
-  
-  /* Questions in middle */
-  .questions {
-    grid-column: 4 / 10;
-  }
-  
-  /* Rules on right */
-  .rules {
-    grid-column: 10 / 13;
-  }
-  
-  .footer {
+  #rules {
     grid-column: 1 / 13;
-    background-color: #f1f1f1;
-    text-align: center;
+    grid-row: 4;
   }
-  
+}
