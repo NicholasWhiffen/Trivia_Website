@@ -34,18 +34,21 @@ body {
 #difficulty {
   grid-column: 1 / 4;
   background-color: blue;
+  text-align: center;
 }
 
 /* Questions in middle */
 #questions {
   grid-column: 4 / 10;
   background-color: green;
+  text-align: center;
 }
 
 /* Rules on right */
 #rules {
   grid-column: 10 / 13;
   background-color: red;
+  text-align: center;
 }
 
 #footer {
@@ -59,8 +62,12 @@ body {
 @media screen and (max-width: 600px) {
   #container {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1.5fr 1.5fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 2.5fr 1fr 0.5fr;
     
+  }
+  #header {
+    grid-column: 1 / 13;
+    grid-row: 1;
   }
   #difficulty {
     grid-column: 1 / 13;
@@ -73,5 +80,9 @@ body {
   #rules {
     grid-column: 1 / 13;
     grid-row: 4;
+  }
+  #footer {
+    grid-column: 1 / 13;
+    grid-row: 5;
   }
 }
