@@ -20,17 +20,25 @@
         <div id="questions">
             <h2>QUESTIONS</h2>
             <div id="questionsContainer" class="hide">
-                <div id="question">
-                    <p></p>
-                </div>
+                <div id="question"></div>
                 <div id="answers">
-                    <button class="button">A</button>
-                    <button class="button">B</button>
-                    <button class="button">C</button>
-                    <button class="button">D</button>
+                    <label id="a"></label>
+                    <br>
+                    <label id="b"></label>
+                    <br>
+                    <label id="c"></label>
+                    <br>
+                    <label id="d"></label>
+                    <br>
+                    <input type="text" id="answer">
+                    <br>
+                    <span id="error"></span>
+                    <br>
+                    <input type="button" id="submit" value="Submit">
                 </div>
             </div>
             <button id="start">START</button>
+            <label id="finalScore" class="hide"></label>
         </div>  
         <div id="rules">
             <h2>HIGH SCORES</h2>

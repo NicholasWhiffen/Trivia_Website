@@ -59,35 +59,48 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 10px 2px;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 
-#answers {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  padding: 10px;
-  margin-top: 80px;
+#answers{
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 10px;
 }
 
-#question p {
+#answer{
+  text-align: center;
+  margin: 20px;
+  cursor: text;
+  font-size: 15px;
+  width: 300px;
+  height: 40px;
+}
+
+#a, #b, #c, #d{
+  text-align: center;
+  margin: 20px;
+  font-size: 15px;
+}
+
+
+#question {
  margin: 20px;
+ font-size: 25px;
 }
 
-.button {
-  color: #ffffff;
-  font-weight: bold;
-  background-color: rgb(231, 80, 80);
-  border:3px solid red;
-  border-radius: 10px;
-  padding: 10px;
+#submit{
   cursor: pointer;
-}
-
-.button:hover {
-  background: #eee;
-  color: red;
-  
+  background-color: #ddd;
+  padding: 10px 50px;
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-weight: bold;
+  border: 2px solid #444;
+  border-radius: 10px;
 }
 
 #start {
