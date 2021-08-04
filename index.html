@@ -7,30 +7,26 @@
 </head>
 <body>
     <div id="container">
-        <div id="header">
-            <h2>TRIVIA</h2>
+        <div id="logo">
+            <img src="assets\star-wars-logo-3-1.png">
         </div>
         
-        <div id="difficulty">
-            <h2>HOW TO PLAY</h2>
-            <div id="rules">
-                
-            </div>
+        <div id="title">
+            <h2>TRIVIA</h2>
         </div>
         <div id="questions">
-            <h2>QUESTIONS</h2>
             <div id="questionsContainer" class="hide">
                 <div id="question"></div>
                 <div id="answers">
-                    <label id="a"></label>
+                    <label id="a" class="answer"></label>
+                    
+                    <label id="b" class="answer"></label>
+                    
+                    <label id="c" class="answer"></label>
+                    
+                    <label id="d" class="answer"></label>
                     <br>
-                    <label id="b"></label>
-                    <br>
-                    <label id="c"></label>
-                    <br>
-                    <label id="d"></label>
-                    <br>
-                    <input type="text" id="answer">
+                    <input type="text" autocomplete="off" id="answer">
                     <br>
                     <span id="error"></span>
                     <br>
@@ -40,12 +36,15 @@
             <button id="start">START</button>
             <label id="finalScore" class="hide"></label>
         </div>  
-        <div id="rules">
-            <h2>HIGH SCORES</h2>
+        <div id="timer">
+            <div id="timerContainer">
+                <h2>SCORE</h2>
+                <span id="seconds" class="hide">0</span>
+                <span id="score">0</span>
+            </div>
         </div>
         
         <div id="footer">
-            <p>Footer</p>
         </div>
     </div>
     <script src="trivia.js"></script>
