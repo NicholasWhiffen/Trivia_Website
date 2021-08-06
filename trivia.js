@@ -81,7 +81,7 @@ const startGame = () => {
                     "Qui-Gon Jinn",
                     "Anakin Skywalker",
                     "Mace Windu",
-                    "Qui-Gon-Jinn"],
+                    "Qui-Gon Jinn"],
                     ["Which planet were the clone armies produced on?",
                     "Mustafar",
                     "Jakku",
