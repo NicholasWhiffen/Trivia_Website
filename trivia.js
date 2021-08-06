@@ -23,6 +23,7 @@ const secondsDecrease = () => {
     $("#seconds").textContent = elapsedSeconds;
 };                    
 const startGame = () => {
+    $("audio").play();
     score = 0;
     elapsedSeconds = 100;
     $("#seconds").classList.remove("hide");

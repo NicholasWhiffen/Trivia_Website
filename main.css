@@ -176,6 +176,7 @@ body {
   grid-row-gap: 10px;
   background-color: rgb(255, 196, 2);
 }
+
 @media screen and (max-width: 900px) {
   #container {
     grid-template-rows: 0.5fr 0.5fr 2.5fr 0.75fr 0.5fr;
