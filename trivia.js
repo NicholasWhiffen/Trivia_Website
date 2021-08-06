@@ -78,7 +78,7 @@ const startGame = () => {
                     "Darth Sidious"],
                     ["Who was Count Dooku's padawan before he left the Jedi?",
                     "Obi-Wan Kenobi",
-                    "Qui-Gon-Jinn",
+                    "Qui-Gon Jinn",
                     "Anakin Skywalker",
                     "Mace Windu",
                     "Qui-Gon-Jinn"],
